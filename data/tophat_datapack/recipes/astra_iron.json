@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "tophat_datapack:astra_iron"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:crushed_iron_ore",
+      "count": 3
+    },
+    {
+      "item": "create:crushed_iron_ore",
+      "count": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 1,
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 300
+}

@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:prismarine_crystals",
+      "count": 1
+    },
+    {
+      "item": "minecraft:prismarine_crystals",
+      "count": 1,
+      "chance": 0.75
+    }
+  ],
+  "processingTime": 300
+}

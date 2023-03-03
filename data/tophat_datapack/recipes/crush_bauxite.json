@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:bauxite_ores",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "modern_industrialization:bauxite_dust",
+      "count": 3
+    },
+    {
+      "item": "modern_industrialization:bauxite_dust",
+      "count": 1,
+      "chance": 0.75
+    }
+  ],
+  "processingTime": 300
+}
