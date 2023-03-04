@@ -6,6 +6,22 @@ local expect = dofile("rom/modules/main/cc/expect.lua")
 local expect, field = expect.expect, expect.field
 local wrap = dofile("rom/modules/main/cc/strings.lua").wrap
 
+local function preLogFileCheck()
+  local dateStr = os.date("%F")
+  -- Create the logs directory if it doesn't exist.
+  if not fs.exists("logs") then
+      fs.makeDir("logs")
+  end
+
+  -- Create the log file for today if it doesn't exist.
+  if not fs.exists("logs/" .. dateStr .. ".log") then
+      local file = fs.open("logs/" .. dateStr .. ".log", "w")
+      file.close()
+  end
+end
+
+preLogFileCheck()
+
 local function getTypeColor(value)
     local typeColor = {
         ["string"] = colors.white,
@@ -90,6 +106,8 @@ function log ( ... )
   local dateStr = os.date("%F", time)
   local timeStr = os.date("%T", time)
 
+  preLogFileCheck()
+
   local logFileName = ("logs/" .. dateStr .. ".log")
   local prependStr = ("[" .. timeStr .. "] ")
 
@@ -109,7 +127,7 @@ function log ( ... )
       printTable(arg)
       arg = json.encode(removeFnFromTable(arg))
     else
-      local lines = wrap(tostring(arg))
+      local lines = wrap(tostring(arg) or "ERR")
       for _, line in ipairs(lines) do
         print(line)
       end
