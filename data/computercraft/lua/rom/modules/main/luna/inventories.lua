@@ -24,7 +24,7 @@ local function mapItem ( item )
     ["name"] = item.name,
     ["technicalName"] = item.technicalName or item.name,
     ["displayName"] = item.displayName or item.name,
-    ["tags"] = tags,
+    ["tags"] = item.tags,
     ["count"] = item.count,
     ["maxCount"] = item.maxCount or 1 -- Try to find a way to ALWAYS get the max count.
   }
