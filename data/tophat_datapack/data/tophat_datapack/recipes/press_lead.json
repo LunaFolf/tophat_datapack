@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:lead_ingots",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "indrev:lead_plate",
+      "count": 1
+    }
+  ]
+}

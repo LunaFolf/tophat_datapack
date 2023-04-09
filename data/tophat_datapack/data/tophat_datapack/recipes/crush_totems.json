@@ -1,0 +1,31 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:totem_of_undying",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 1
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "count": 1,
+      "chance": 0.5
+    },
+    {
+      "item": "minecraft:emerald",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.5
+    }
+  ],
+  "processingTime": 300
+}

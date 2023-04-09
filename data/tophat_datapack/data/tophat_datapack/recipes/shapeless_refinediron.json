@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "techreborn:refined_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "ad_astra:steel_ingot"
+  }
+}

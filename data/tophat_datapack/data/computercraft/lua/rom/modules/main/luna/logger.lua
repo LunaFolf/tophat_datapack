@@ -183,12 +183,7 @@ local function error ( ... )
   log_impl(args, { ["type"] = "error" })
 end
 
--- return setmetatable({
---   log = log,
---   error = error
--- }, { __call = function ( self, ... ) return self.log(...) end })
-
-return {
+return setmetatable({
   log = log,
   error = error
-}
+}, { __call = function ( self, ... ) return self.log(...) end })

@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:nickel_ores"
+    }
+  ],
+  "results": [
+    {
+      "item": "techreborn:nickel_dust",
+      "count": 3
+    },
+    {
+      "item": "techreborn:nickel_dust",
+      "count": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 1,
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 300
+}

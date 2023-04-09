@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:silver_ingots",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "indrev:silver_plate",
+      "count": 1
+    }
+  ]
+}

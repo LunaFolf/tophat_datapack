@@ -254,16 +254,9 @@ local function inventoryHasSpace ( inventoryName, item )
   end
 end
 
--- return setmetatable({
---   getIndexedItems = getIndexedItems,
---   getItemTotals = getItemTotals,
---   hasTags = hasTags,
---   inventoryHasSpace = inventoryHasSpace,
--- }, { __call = function ( _, ... ) return getIndexedItems(...) end })
-
-return {
+return setmetatable({
   getIndexedItems = getIndexedItems,
   getItemTotals = getItemTotals,
   hasTags = hasTags,
   inventoryHasSpace = inventoryHasSpace,
-}
+}, { __call = function ( _, ... ) return getIndexedItems(...) end })

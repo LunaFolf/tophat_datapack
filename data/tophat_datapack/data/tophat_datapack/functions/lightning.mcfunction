@@ -1,0 +1,1 @@
+particle ae2:lightning_fx 4520.00 71.54 -192.57 2 2 2 10000 20 force

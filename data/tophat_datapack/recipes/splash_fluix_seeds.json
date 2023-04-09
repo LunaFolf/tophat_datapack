@@ -1,0 +1,19 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "ae2:fluix_crystal_seed"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:fluix_crystal",
+      "count": 1
+    },
+    {
+      "item": "ae2:fluix_crystal",
+      "count": 1,
+      "chance": 0.1
+    }
+  ]
+}
