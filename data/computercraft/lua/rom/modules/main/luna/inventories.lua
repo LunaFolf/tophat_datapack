@@ -48,6 +48,8 @@ local function getInventoryItems ( inventoryPeripheral )
       end
       local mappedItem = mapItem(item)
 
+      mappedItem.slot = slotIndex
+
       if not inventoryItems[mappedItem.name] then
         mappedItem.where = peripheral.getName(inventoryPeripheral)
         inventoryItems[mappedItem.name] = mappedItem
