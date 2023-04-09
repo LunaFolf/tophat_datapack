@@ -20,14 +20,6 @@ end
 local function mapItem ( item )
   item = fixItemName(item)
 
-  tags = {}
-  if item.tags then
-    for _, tag in ipairs(item.tags) do
-      tags[tag] = true
-      table.insert(tags, tag)
-    end
-  end
-
   return {
     ["name"] = item.name,
     ["technicalName"] = item.technicalName or item.name,
